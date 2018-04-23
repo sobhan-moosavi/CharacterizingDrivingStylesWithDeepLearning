@@ -1,4 +1,4 @@
-# A Tensorflow implementation of 'Characterizing Driving Styles with Deep Learning'
+# Characterizing Driving Styles with Deep Learning
 
 Here, a tensorflow implementation for <a href="https://arxiv.org/abs/1607.03611">Characterizing Driving Styles with Deep Learning</a> is provided. 
 

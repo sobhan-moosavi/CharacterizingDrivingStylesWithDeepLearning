@@ -15,12 +15,13 @@ Here, a tensorflow implementation for <a href="https://arxiv.org/abs/1607.03611"
 4. RNN: In oredr to train and test the RNN-based architecture in the paper, you need to run 'IBM16_RNN.py'. This script trains and saves the best model in 'models' folder, and uses the best model for testing.
 
 ## Results
-Our best results for driver classification based on a real-world, private, and non-anonymized dataset of 50 drivers with 200 trajectories for each is as follows:
+Our best results for driver classification task based on a real-world, private, and non-anonymized (gps coordinates) dataset of 50 drivers with 200 trajectories for each is as follows:
 
 | Model | #Drivers | #Trajectories | Test Accuracy |
 | ------------- | ------------- | ------------- | ------------- |
 | CNN  | 50  | 200  | 16.4%  |
 | RNN  | 50  | 200  | 25.0%  |
+
 
 ## References 
 1. [Characterizing Driving Styles with Deep Learning, 2016](https://arxiv.org/pdf/1607.03611.pdf)

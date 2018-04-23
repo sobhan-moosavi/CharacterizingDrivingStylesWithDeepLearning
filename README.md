@@ -22,11 +22,12 @@ A sample data file for 5 drivers, with 5 trajectories for each, is shared in 'da
 
 Our best results for driver classification task based on a real-world, private, and non-anonymized (gps coordinates) dataset of 50 drivers with 200 trajectories for each is as follows:
 
-| Model | #Drivers | #Trajectories | Test Accuracy |
-| ------------- | ------------- | ------------- | ------------- |
-| CNN  | 50  | 200  | 16.4%  |
-| RNN  | 50  | 200  | 25.0%  |
+| Model | #Drivers | #Trajectories | Test Accuracy | Note |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| CNN  | 50  | 200  | 16.4%  | Using Momentum Nestrov Optimizer; Momentum=0.9 |
+| RNN  | 50  | 200  | 25.0%  | LSTM cells, 2 Layers; Dropout on Second layer (0.6), Batch 256 |
 
+Note that here we used LSTM cells, instead of using RNN cells with identity matrix for recurrent weight initialization, as such thing is not available in Tensorflow currently. However, as mentioned by <a href="https://arxiv.org/abs/1504.00941">Le et al.</a>, the initialized recurrent weight solution provides comaprable results to LSTM cells. 
 
 ## References 
 

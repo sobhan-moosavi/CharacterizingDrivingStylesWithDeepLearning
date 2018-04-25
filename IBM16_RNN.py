@@ -212,9 +212,7 @@ def convertLabelsToOneHotVector(labels, ln):
   
 
 if __name__ == '__main__':
-    
-    
-    # We treat images as sequences of pixel rows.
+    #Arguments to specify the data file for train and test. 
     args = [50, 200]
     st = time.time()
     train, train_labels, dev, dev_labels, test, test_labels, num_classes = returnTrainDevTestData()

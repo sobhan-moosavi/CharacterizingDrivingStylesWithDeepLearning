@@ -20,7 +20,7 @@ A sample data file for 5 drivers, with 5 trajectories for each, is shared in 'da
 
 ## Results
 
-Our best results for driver classification task based on a real-world, private, and non-anonymized (gps coordinates) dataset of 50 drivers with 200 trajectories for each is as follows:
+Our best results for driver classification task based on a real-world, private, and non-anonymized (gps coordinates) dataset of 50 drivers with 200 trajectories for each is as follows (prediction is on segment-level, and not the trip-level):
 
 | Model | #Drivers | #Trajectories | Test Accuracy | Note |
 | ------------- | ------------- | ------------- | ------------- | ------------- |

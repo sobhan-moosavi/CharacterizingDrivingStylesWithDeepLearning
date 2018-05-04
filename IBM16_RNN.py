@@ -272,7 +272,7 @@ if __name__ == '__main__':
             acc_dev  = sess.run(model.accuracy, {data: dev, target: dev_labels, dropout: dropouts_dev})
             print('Step {:2d}, Epoch {:2d}, Minibatch Train Loss {:.3f}, Dev Loss {:.3f}, Train-Accuracy {:.1f}%, Dev-Accuracy {:.1f}% ({:.1f} sec)'.format(step + 1, epoch, loss_train, loss_dev, 100 * acc_train, 100*acc_dev, (time.time()-start)))
             start = time.time()
-        next_batch_start += next_batch_start+batch_size
+        next_batch_start += batch_size
         if next_batch_start >= len(train):
             train, train_labels = shuffle_in_union(train, train_labels)
             dev, dev_labels = shuffle_in_union(dev, dev_labels)

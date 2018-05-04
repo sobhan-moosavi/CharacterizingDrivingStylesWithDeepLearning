@@ -284,7 +284,7 @@ if __name__ == '__main__':
             print('Step {:2d}, Epoch {:2d}, Train Loss {:.3f}, Dev-Loss {:.3f}, Mini-Batch Train_Accuracy {:.1f}%, Dev-Accuracy {:.1f}%, ({:.1f} sec)'.format(step + 1, epoch, loss, dev_loss, 100*train_acc, 100*dev_acc, (time.time()-start)))            
             start = time.time()
             
-        next_batch_start += next_batch_start+batch_size        
+        next_batch_start += batch_size        
         if next_batch_start >= len(train):
             train, train_labels = shuffle_in_union(train, train_labels)
             next_batch_start = 0

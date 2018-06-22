@@ -200,7 +200,7 @@ def returnTrainAndTestData():
 
     train_data, train_labels = shuffle_in_union(train_data, train_labels)   #Does shuffling do any help ==> it does a great help!!
   
-    return train_data, train_labels, dev_data, dev_labels, test_data, test_labels, len(driverIds)
+    return train_data, train_labels, dev_data, dev_labels, test_data, test_labels, len(driverIds)+1
 
     
 def shuffle_in_union(a, b):

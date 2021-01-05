@@ -213,7 +213,7 @@ def convertLabelsToOneHotVector(labels, ln):
 
 if __name__ == '__main__':
     #Arguments to specify the data file for train and test. 
-    args = [50, 200]
+    args = [5, 5] # the first input shows number of drivers, and the second one the number of trajectories per driver
     st = time.time()
     train, train_labels, dev, dev_labels, test, test_labels, num_classes = returnTrainDevTestData()
     print('Train, Dev, Test datasets are loaded in {:.1f} seconds!'.format(time.time()-st))

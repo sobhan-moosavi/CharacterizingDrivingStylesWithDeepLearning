@@ -227,7 +227,7 @@ def convertLabelsToOneHotVector(labels, ln):
  
 if __name__ == '__main__':
 
-    args = [50, 200]
+    args = [5, 5] # the first input shows number of drivers, and the second one the number of trajectories per driver
     st = time.time()
     train, train_labels, dev, dev_labels, test, test_labels, num_classes = returnTrainAndTestData()
     print('All data is loaded in {:.1f} seconds'.format(time.time()-st))
